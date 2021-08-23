@@ -1,0 +1,47 @@
+{
+  "name": "widget/menu",
+  "type": "library",
+  "description": "Javascript widget menu",
+  "keywords": [
+    "ubyte",
+    "client-side",
+    "widget",
+    "menu"
+  ],
+  "homepage": "https://github.com/energia-source/widget-menu",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paolo Fabris",
+      "email": "support@ubyte.it",
+      "homepage": "https://www.ubyte.it/",
+      "role": "Developer"
+    },
+    {
+      "name": "Gabriele Luigi Masero",
+      "email": "support@ubyte.it",
+      "homepage": "https://www.ubyte.it/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Menu\\": "lib/"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "energia-source/knight-armor": "*",
+    "energia-source/knight-artifact-entity": ">=1.1.0"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/energia-source/knight-armor"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/energia-source/knight-artifact-entity"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+nav#menu { position: absolute; top: 48px; bottom: 0; z-index: 255; background-color: #fafafa; border-right: 1px solid #cecece; transition: all .2s ease-out; }
+nav#menu.crush { width: 50px; }
+nav#menu.crush div.modules { overflow-x: hidden !important; }
+nav#menu.crush div.modules a label.label { visibility: hidden; opacity: 0; }
+nav#menu.crush div.modules label.label { padding: 0; overflow: hidden; white-space: nowrap; visibility: hidden; opacity: 0; }
+nav#menu.crush div.modules div.cluster div.wrapper { display: none; }
+
+nav#menu.crush.preview, nav#menu { width: 249px; }
+nav#menu.crush.preview div.modules a label.label { visibility: visible; opacity: 1; }
+nav#menu.crush.preview div.modules div.cluster div.wrapper { display: block; }
+nav#menu.crush.preview div.modules label.label { padding: 10px; visibility: visible; opacity: 1; }
+
+nav#menu.crush div.footer a { transform: rotate(90deg); }
+
+nav#menu div.header { padding: 20px 10px; height: 24px; border-bottom: 1.1px solid #cecece; font-size: 18px; line-height: 24px; z-index: 8; }
+nav#menu div.header, nav#menu div.modules a, nav#menu div.modules div.cluster div.wrapper, nav#menu div.footer a { white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis; }
+nav#menu div.header img, nav#menu div.header i { margin-right: 16px; }
+nav#menu div.header img { width: 24px; }
+
+nav#menu div.modules { margin-bottom: 16px; }
+nav#menu div.modules a { background-color: #fafafa; display: block; height: 20px; padding: 10px; line-height: 20px; }
+nav#menu div.modules a label.label { font-size: 13px; color: #666; display: inline; visibility: visible; opacity: 1; cursor: pointer; transition: opacity .2s linear; }
+nav#menu div.modules a i { font-weight: 400; font-size: 24px; line-height: inherit; color: #666; }
+nav#menu div.modules a i, nav#menu div.modules div.cluster div.wrapper a img, nav#menu div.modules a img { width: 24px; margin-left: 3px; margin-right: 16px; }
+nav#menu div.modules a.active { background-color: #ecf1f1; }
+nav#menu div.modules a.active i, nav#menu div.modules a.active label { color: #3b78e7; }
+nav#menu div.modules a:hover { background-color: #e5e2e2 !important; }
+
+nav#menu div.modules div.cluster div.wrapper { border-bottom: 1px solid #cecece; }
+nav#menu div.modules div.cluster div.wrapper label.label { margin: 0 auto; padding: 10px; font-weight: bolder; font-size: 13px; line-height: 13px; text-transform: uppercase; visibility: visible; opacity: 1; transition: .2s linear; }
+
+nav#menu div.modules { position: absolute; width: 100%; top: 0; bottom: 35px; overflow-y: auto; }
+nav#menu div.modules.addheader { top: 65px; }
+
+nav#menu div.footer { position: absolute; width: 100%; bottom: 0; z-index: 8; border-top: 1.1px solid #cecece; }
+nav#menu div.footer a { margin: 5px; padding: 0; width: 40px; height: 40px; line-height: 40px; border-radius: 50%; text-align: center; }
+nav#menu div.footer a { display: inline-block; cursor: pointer; transition: transform .2s ease; transform: rotate(-90deg); }
+nav#menu div.footer a i { margin: 0; line-height: 40px; }
+
+nav#menu div.preloader { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(240,240,240, 0.4); z-index: 256; }
+nav#menu div.preloader div.spinner { position: absolute; left: 50%; top: 50%; width: 70px; margin: auto; overflow: hidden; text-align: center; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
+nav#menu div.preloader div.spinner div { display: inline-block; width: 8px; height: 8px; background-color: #397be6; border-radius: 100%; -webkit-animation: form-preloader-spinner-delay 1.4s infinite ease-in-out both; animation: form-preloader-spinner-delay 1.4s infinite ease-in-out both; }
+nav#menu div.preloader div.spinner div.bounce-0 { -webkit-animation-delay: -.32s; animation-delay: -.32s; }
+nav#menu div.preloader div.spinner div.bounce-1 { -webkit-animation-delay: -.16s; animation-delay: -.16s; }
+
+@-webkit-keyframes form-preloader-spinner-delay {
+  0%,80%,100%{ -webkit-transform: scale(0); }
+  40%{ -webkit-transform: scale(1.0); }
+}
+@keyframes form-preloader-spinner-delay {
+  0%,80%,100%{ -webkit-transform: scale(0); transform: scale(0); }
+  40%{ -webkit-transform: scale(1.0); transform: scale(1.0); }
+}
