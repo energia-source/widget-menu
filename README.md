@@ -40,10 +40,10 @@ document.appendChild(menu.out());
 ## Structure
 
 library:
-    - [window.Menu](https://github.com/energia-source/widget-menu#class-windowmenu-usable-methods)
-    - [window.Menu.Item](https://github.com/energia-source/widget-menu#class-windowmenuitem-usable-methods)
-    - [window.Menu.Cluster](https://github.com/energia-source/widget-menu#class-windowmenucluster-usable-methods)
-    - [window.Menu.Preloader](https://github.com/energia-source/widget-menu#class-windowmenupreloader-usable-methods)
+- [window.Menu](https://github.com/energia-source/widget-menu#class-windowmenu-usable-methods)
+- [window.Menu.Item](https://github.com/energia-source/widget-menu#class-windowmenuitem-usable-methods)
+- [window.Menu.Cluster](https://github.com/energia-source/widget-menu#class-windowmenucluster-usable-methods)
+- [window.Menu.Preloader](https://github.com/energia-source/widget-menu#class-windowmenupreloader-usable-methods)
 
 <br>
 
